@@ -34,12 +34,12 @@ var queueTimer = setInterval(function(){
             addMessage(event)
         }
     }
-    console.log("Showing")
-    console.log({gifQueue})
+    // console.log("Showing")
+    // console.log({gifQueue})
 }, 500);
 
 api.setEventHandler((events) => {
-    console.log(events);
+    // console.log(events);
     events.forEach(event => {
         if((event.type == "ag")){
             gifQueue.push(event);
